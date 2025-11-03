@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Tecnologie Web</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Navigazione principale">
+            <div class="nav-brand">
+                <h1>Chat Tecnologie Web</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/risorse.html">Risorse</a></li>
+                <li><a href="/chat.html" class="active">Chat</a></li>
+                <li><a href="/about.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="chat-container" aria-label="Conversazione della chat">
+        <section class="chat-header">
+            <h2>LLM Playground</h2>
+            <p>Simulazione di chat con LLM — Area test conversazione <span aria-hidden="true">🤖</span></p>
+        </section>
+
+        <section class="chat-messages" aria-live="polite">
+            <div class="chat-message user">
+                <div class="message-avatar" aria-label="Avatar utente">
+                    <span aria-hidden="true">👤</span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">Ciao! Puoi spiegarmi cosa sono i <strong>CSS selectors</strong>?</p>
+                    <time class="message-time" datetime="2025-04-01T15:01">15:01</time>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-avatar" aria-label="Avatar assistente">
+                    <span aria-hidden="true">🤖</span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">
+                        Certo! I <strong>selector CSS</strong> servono per selezionare uno o più elementi HTML a cui applicare stili.<br>
+                        Esempio: <code>p { color: red; }</code> seleziona tutti i paragrafi.<br>
+                        Consulta la <a href="https://developer.mozilla.org/it/docs/Web/CSS/CSS_selectors" target="_blank" rel="noopener">documentazione MDN</a> per dettagli ed esempi.</p>
+                    <time class="message-time" datetime="2025-04-01T15:02">15:02</time>
+                </div>
+            </div>
+            <div class="chat-message user">
+                <div class="message-avatar" aria-label="Avatar utente">
+                    <span aria-hidden="true">👤</span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">E come funzionano le media query?</p>
+                    <time class="message-time" datetime="2025-04-01T15:02">15:02</time>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-avatar" aria-label="Avatar assistente">
+                    <span aria-hidden="true">🤖</span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">
+                        Le <strong>media query</strong> permettono di applicare regole CSS solo in base a certe condizioni, ad esempio la larghezza dello schermo.<br>
+                        Esempio:
+                        <pre><code>@media (max-width: 600px) {
+  body { font-size: 1.1rem; }
+}</code></pre>
+                        Questo aumenta la <strong>responsività</strong> della pagina!
+                    </p>
+                    <time class="message-time" datetime="2025-04-01T15:03">15:03</time>
+                </div>
+            </div>
+            <div class="chat-message user">
+                <div class="message-avatar" aria-label="Avatar utente">
+                    <span aria-hidden="true">👤</span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">Grazie! Puoi dare un consiglio su animazioni CSS semplici?</p>
+                    <time class="message-time" datetime="2025-04-01T15:04">15:04</time>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="message-avatar" aria-label="Avatar assistente">
+                    <span aria-hidden="true">🤖</span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">
+                        Volentieri! Ecco una semplice animazione che fa comparire un elemento "fade in":
+                        <pre><code>@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.elemento {
+  animation: fadeIn 1s ease-in;
+}</code></pre>
+                        Puoi provarla su una <strong>card</strong> o su una sezione principale!
+                    </p>
+                    <time class="message-time" datetime="2025-04-01T15:04">15:04</time>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat-input-container" aria-label="Invio messaggio">
+            <form class="chat-input-form" autocomplete="off">
+                <input class="chat-input" type="text" placeholder="Scrivi un messaggio…" aria-label="Scrivi un messaggio" disabled>
+                <button class="chat-send-btn" type="submit" disabled aria-disabled="true">
+                    Invia
+                </button>
+            </form>
+            <p class="hint" style="margin-top: 0.5rem;">Questa chat è una simulazione grafica, l’invio non è attivo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Esercizi Tecnologie Web</p>
+            <p>Creato da <strong>William Brusa</strong></p>
+            <nav class="footer-nav" aria-label="Navigazione secondaria">
+                <a href="/about.html">Info</a>
+                <a href="/risorse.html">Risorse</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

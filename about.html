@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info • Esercizi Tecnologie Web</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Navigazione principale">
+            <div class="nav-brand">
+                <h1>Esercizi Tecnologie Web</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/risorse.html">Risorse</a></li>
+                <li><a href="/chat.html">Chat</a></li>
+                <li><a href="/about.html" class="active" aria-current="page">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="about-title">
+            <h2 id="about-title">Cos'è questo sito?</h2>
+            <p>
+                <strong>Esercizi Tecnologie Web</strong> è una raccolta di esercizi pratici dedicati allo studio delle tecnologie web: HTML, CSS e JavaScript.
+                Questa piattaforma è pensata per studenti del <span lang="en">Corso di Laurea in Informatica</span> dell'Università di Bologna, ma è aperta a chiunque voglia imparare o ripassare le basi del <abbr title="World Wide Web">Web</abbr>!
+            </p>
+        </section>
+
+        <section class="exercise-section" aria-labelledby="author-title">
+            <h3 id="author-title">Realizzazione del sito</h3>
+            <div class="about-flex-row">
+                <img src="/assets/unibo.png" 
+                     alt="Foto del logo di Alma Mater Studiorum Bologna" 
+                     width="88" height="88"
+                     class="about-logo"
+                     loading="lazy">
+                <div>
+                  <p> Il sito è stato realizzato come esercizio di sviluppo durante il corso di <strong>Tecnologie Web</strong>, <br> del corso di laurea triennale di <strong>Informatica</strong>, con l'obbiettivo di realizzare una pagina web degli esercizi da svolgere.
+                </div>
+            </div>
+        </section>
+
+        <section class="exercise-section" aria-labelledby="features-title">
+            <h3 id="features-title">Caratteristiche principali</h3>
+            <ul>
+                <li>🌱 <strong>Mobile First & Responsive</strong>: funziona bene su ogni schermo, da <abbr title="mobile">smartphone</abbr> a desktop.</li>
+                <li>🎨 <strong>Colori accessibili</strong>: palette e contrasto scelti per garantire la leggibilità.</li>
+                <li>🔠 <strong>Tipografia scalabile</strong>: tutto il testo usa unità relative (<code>rem</code>, <code>vw</code>, <code>ch</code>).</li>
+                <li>✨ <strong>Animazioni moderne</strong>: animazioni su banner e carte esercizio con transizioni fluide.</li>
+                <li>♿ <strong>Accessibilità</strong>: navigazione da tastiera, focus ben visibile e <abbr lang="en" title="Aria Landmarks">landmarks</abbr> semantici.</li>
+                <li>📚 <strong>Documentazione MDN</strong>: tutti gli esercizi linkano alle risorse ufficiali MDN per approfondire ogni tema.</li>
+            </ul>
+        </section>
+
+
+        <section class="exercise-section" aria-labelledby="palette-title">
+            <h3 id="palette-title">Palette colori &amp; tipografia</h3>
+            <div class="about-flex-row">
+                <div>
+                    <ul class="palette-row">
+                        <li>
+                            <span aria-label="Primario" title="Primario"
+                                  class="palette-color palette-primary"></span>
+                        </li>
+                        <li>
+                            <span aria-label="Secondario" title="Secondario"
+                                  class="palette-color palette-secondary"></span>
+                        </li>
+                        <li>
+                            <span aria-label="Accento" title="Accent"
+                                  class="palette-color palette-accent"></span>
+                        </li>
+                        <li>
+                            <span aria-label="Background" title="Background"
+                                  class="palette-color palette-bg"></span>
+                        </li>
+                        <li>
+                            <span aria-label="Testo principale" title="Text"
+                                  class="palette-color palette-text"></span>
+                        </li>
+                    </ul>
+                    <small>Palette principale (Gruvbox-inspired)</small>
+                </div>
+                <div>
+                    <p class="about-typography-info">
+                        <strong>Font:</strong> <code>system-ui</code>, <code>Segoe UI</code>, <code>Arial</code>, <code>sans-serif</code><br>
+                        <strong>Scala tipografica:</strong> 
+                        <code>0.75rem</code> – <code>1.125rem</code> – <code>1.5rem</code> – <code>2.25rem</code>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exercise-section" aria-labelledby="a11y-title">
+            <h3 id="a11y-title">Accessibilità (a11y)</h3>
+            <ul>
+                <li>Struttura con landmark (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+                <li>Focus visibile e navigabile con tastiera (<kbd>Tab</kbd>)</li>
+                <li>Testo alternativo (<code>alt</code>) su tutte le immagini</li>
+                <li>Contrasto elevato per tutti i componenti e bottoni</li>
+                <li>Tutte le interazioni <abbr lang="en" title="Accessible Rich Internet Applications">ARIA</abbr>-friendly</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Esercizi Tecnologie Web</p>
+            <p>Creato da <strong>William Brusa</strong></p>
+            <nav class="footer-nav" aria-label="Navigazione di servizio">
+                <a href="/about.html" aria-current="page">Info</a>
+                <a href="/risorse.html">Risorse</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
