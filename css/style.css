@@ -1213,7 +1213,7 @@ header {
    ============================================ */
 footer {
     background-color: var(--color-bg-dark);
-    color: var(--color-text-inverse);
+    color: var(--color-text-light);
     padding: calc(var(--spacing-xl) * 1.5) var(--spacing-md);
     margin-top: var(--spacing-3xl);
 }
@@ -1241,14 +1241,14 @@ footer {
 }
 
 .footer-nav a {
-    color: var(--color-text-inverse);
+    color: var(--color-text-light);
     opacity: 0.8;
     transition: opacity var(--transition-fast);
 }
 
 .footer-nav a:hover {
     opacity: 1;
-    color: var(--color-text-inverse);
+    color: var(--color-text-light);
 }
 
 

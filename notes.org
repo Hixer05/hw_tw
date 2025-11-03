@@ -60,6 +60,7 @@ button:focus-visible {
 
 Why would i add this? 
 [2025-11-03 lun 17:25]
+** TODO [#A] footer readability
 ** TODO [#C] Magic Numbers
 CLOSED: [2025-11-03 Sun 15:22]
 :PROPERTIES:
