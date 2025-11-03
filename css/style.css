@@ -53,6 +53,7 @@
     /* Spacing Scale */
     --spacing-xs: 0.25rem;    /* 4px */
     --spacing-sm: 0.5rem;     /* 8px */
+    --spacing-sm-plus: 0.75rem
     --spacing-md: 1rem;       /* 16px */
     --spacing-lg: 1.5rem;     /* 24px */
     --spacing-xl: 2rem;       /* 32px */
@@ -307,7 +308,7 @@ header {
 
 .nav-menu a {
     display: block;
-    padding: calc(var(--spacing-sm) * 1.5) var(--spacing-md);
+    padding: var(--spacing-sm-plus)  var(--spacing-md);
     border-radius: var(--border-radius-md);
     font-weight: 500;
     transition: all var(--transition-fast);
