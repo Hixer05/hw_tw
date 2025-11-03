@@ -3,34 +3,38 @@
    ============================================ */
 :root {
     /* Color Palette */
-    --color-primary: #2563eb;
-    --color-primary-dark: #1e40af;
-    --color-secondary: #10b981;
-    --color-accent: #f59e0b;
-    --color-danger: #ef4444;
-    
     --color-html: #e34c26;
-    --color-css: #264de4;
+    --color-css:  #458588; /*#264de4;*/
     --color-javascript: #f0db4f;
     
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f9fafb;
-    --color-bg-tertiary: #f3f4f6;
-    --color-bg-dark: #1f2937;
+     /* Primary colors - using Gruvbox green */
+    --color-primary: #8EC07C; /*#458588*/
+    --color-primary-dark:#98971A ; /* #076678; */
+    --color-secondary: #98971A;
+    --color-accent: #D79921;
+    --color-danger: #CC241D;
     
-    --color-text-primary: #111827;
-    --color-text-secondary: #6b7280;
-    --color-text-light: #9ca3af;
-    --color-text-inverse: #ffffff;
+    /* Background colors - using Gruvbox dark backgrounds */
+    --color-bg-primary: #282828;
+    --color-bg-secondary: #3C3836;
+    --color-bg-tertiary: #504945;
+    --color-bg-dark: #1D2021;
     
-    --color-border: #e5e7eb;
-    --color-border-dark: #d1d5db;
+    /* Text colors - using Gruvbox foreground colors */
+    --color-text-primary: #EBDBB2;
+    --color-text-secondary: #D5C4A1;
+    --color-text-light: #BDAE93;
+    --color-text-inverse: #282828;
+    
+    /* Border colors */
+    --color-border: #504945;
+    --color-border-dark: #665C54;
     
     /* Difficulty Badge Colors */
-    --color-badge-basic: #10b981;
-    --color-badge-intermediate: #f59e0b;
-    --color-badge-advanced: #ef4444;
-    
+    --color-badge-basic: #98971A;      /* Gruvbox green */
+    --color-badge-intermediate: #D79921; /* Gruvbox yellow */
+    --color-badge-advanced: #CC241D;    /* Gruvbox red */   
+
     /* Typography Scale */
     --font-size-xs: 0.75rem;      /* 12px */
     --font-size-sm: 0.875rem;     /* 14px */
