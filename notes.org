@@ -17,6 +17,7 @@
 
 *Fix:* Remove redundant ~list-style: none~ when parent already handles it.
 [2025-11-03 lun 17:25]
+** DONE [#A] fix: readability in exercise tables
 ** NEXT [#B] Table Display Issue
 :PROPERTIES:
 :LOCATION: Line 592

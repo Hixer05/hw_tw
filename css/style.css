@@ -602,7 +602,7 @@ header {
 
 .exercise-table thead {
     background-color: var(--color-bg-dark);
-    color: var(--color-text-inverse);
+    color: var(--color-text-primary);
 }
 
 .exercise-table th {
