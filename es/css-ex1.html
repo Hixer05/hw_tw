@@ -1,0 +1,351 @@
+<!-- GPTEL adapt css-ex1 to _exercise-template.html, css is already in styel.css (provided), if the original there is no solution then don't add it!  If there is boilerplate add it as a code snippet!!!! -->
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata & Nesting CSS - Esercizio CSS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <h1>Esercizi Tecnologie Web</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/risorse.html">Risorse</a></li>
+                <li><a href="/chat.html">Chat</a></li>
+                <li><a href="/about.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-layout">
+        <aside class="sidebar">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/tema/css.html">CSS</a></li>
+                    <li aria-current="page">Esercizio 1</li>
+                </ol>
+            </nav>
+            
+            <div class="sidebar-section">
+                <h3>Info Esercizio</h3>
+                <dl class="exercise-meta">
+                    <dt>Difficoltà:</dt>
+                    <dd><span class="badge badge-basic">Base</span></dd>
+                    <dt>Durata:</dt>
+                    <dd>20-30 min</dd>
+                    <dt>Prerequisiti:</dt>
+                    <dd>Conoscenza base HTML, Nozioni di CSS</dd>
+                </dl>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Navigazione</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#instructions">Istruzioni</a></li>
+                    <li><a href="#materials">Materiali</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Altri Esercizi</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#">← Esercizio Precedente</a></li>
+                    <li><a href="#">Prossimo Esercizio →</a></li>
+                    <li><a href="/tema/css.html">Torna alla Lista CSS</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <article class="exercise-content">
+                <header class="exercise-header">
+                    <h2>Esercizio 1: Cascata &amp; Nesting dei tag CSS</h2>
+                    <div class="exercise-badges">
+                        <span class="badge badge-basic">Base</span>
+                        <span class="badge badge-duration">20-30 min</span>
+                    </div>
+                </header>
+
+                <section id="instructions" class="exercise-section">
+                    <h3>Istruzioni</h3>
+                    <div class="instructions-content">
+                        <h4>Obiettivo</h4>
+                        <p>
+                            Capire come l’ordine delle regole, la specificità e la struttura (nesting) influenzino lo stile finale di un elemento.
+                        </p>
+
+                        <h4>Compiti</h4>
+                        <ol>
+                            <li>Apri un nuovo file <code>index.html</code> e incolla il boilerplate fornito sotto.</li>
+                            <li>Segui gli <strong>ESERCIZI</strong> commentati all’interno del blocco <code>&lt;style&gt;</code> e nelle regole annidate.</li>
+                            <li>Comprendi e applica le regole di cascata e specificità modificando i selettori secondo richiesta.</li>
+                            <li>Rivela il messaggio segreto nella sezione "Sfida Finale" modificando SOLO la regola CSS relativa.</li>
+                        </ol>
+
+                        <h4>Output Atteso</h4>
+                        <p>
+                            Il file conterrà una navigazione, varie sezioni di contenuto e una challenge finale. Alcuni stili saranno visibili solo se le regole CSS sono costruite e ordinate correttamente. Il messaggio segreto nella challenge compare solo se risolvi la parte relativa.
+                        </p>
+
+                        <h4>Suggerimenti</h4>
+                        <ul>
+                            <li>Analizza l’ordine dei selettori e il loro “peso specifico”.</li>
+                            <li>Ricorda: selettori più specifici (ID &gt; classi &gt; tag) vincono.</li>
+                            <li>Non tutte le regole si comportano come ci si aspetta: alcune sono sovrascritte, altre no.</li>
+                            <li>Non modificare le regole segnalate come "Non modificare queste regole".</li>
+                            <li>Usa gli strumenti di ispezione del browser per capire quali regole si applicano effettivamente.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="materials" class="exercise-section">
+                    <h3>Materiali</h3>
+                    <div class="materials-box">
+                        <h4>Risorse</h4>
+                        <ul class="materials-list">
+                            <li>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank" rel="noopener noreferrer">
+                                    MDN: Cascade and inheritance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors" target="_blank" rel="noopener noreferrer">
+                                    MDN: CSS Selectors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Styling_a_bio_page" target="_blank" rel="noopener noreferrer">
+                                    MDN: Styling a bio page (bonus)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Selectors" target="_blank" rel="noopener noreferrer">
+                                    MDN: Test your skills — Selectors (bonus)
+                                </a>
+                            </li>
+                        </ul>
+                        <h4>Boilerplate</h4>
+                        <ul class="materials-list">
+                            <li>
+                                <pre><code>&lt;!doctype html&gt;
+&lt;html lang="it"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Cascata &amp; Nesting — Playground&lt;/title&gt;
+  &lt;style&gt;
+    /* === Regole base (candidati alla cascata) === */
+    :root {
+      --brand: #2563eb;
+      --neutral: #475569;
+    }
+
+    nav {
+      font-family: system-ui, sans-serif;
+
+      a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    /* === Stili per le sezioni multiple === */
+    .content-section {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .intro {
+      background-color: #f0f8ff;
+    }
+
+    .tutorial {
+      background-color: #f5f5dc;
+    }
+
+    .examples {
+      background-color: #f0fff0;
+    }
+
+    .challenge {
+      background-color: #fff5ee;
+    }
+
+    /* Stili per elementi specifici */
+    .highlight {
+      font-weight: bold;
+      color: #d2691e;
+    }
+
+    .code-snippet {
+      font-family: monospace;
+      background: #f4f4f4;
+      padding: 2px 4px;
+    }
+
+    .important {
+      color: #dc143c;
+      text-decoration: underline;
+    }
+
+    /* MESSAGGIO SEGRETO - Non modificare queste regole! */
+    .secret-container {
+      position: relative;
+      background-color: #fff5ee;
+    }
+
+    .secret-message {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff5ee;
+      background-color: #fff5ee;
+      padding: 5px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt; · &lt;a href="#"&gt;Articoli&lt;/a&gt; · &lt;a href="#"&gt;Contatti&lt;/a&gt;
+  &lt;/nav&gt;
+
+  &lt;article class="post featured"&gt;
+    &lt;h1&gt;Titolo della Feature&lt;/h1&gt;
+
+    &lt;section class="content intro"&gt;
+      &lt;h2&gt;Introduzione&lt;/h2&gt;
+      &lt;p&gt;Benvenuto in questo tutorial su CSS!
+        Qui imparerai i concetti di &lt;span class="highlight"&gt;specificità&lt;/span&gt; e &lt;span
+              class="highlight"&gt;cascata&lt;/span&gt;.&lt;/p&gt;
+      &lt;p&gt;Questo è il primo paragrafo con un link alla documentazione sui &lt;a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors"&gt;selettori&lt;/a&gt; e &lt;a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Pseudo_classes_and_elements" target="_blank"&gt;pseudo classi/elementi&lt;/a&gt;.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="content tutorial"&gt;
+      &lt;h2&gt;Tutorial Base&lt;/h2&gt;
+      &lt;p&gt;I selettori CSS hanno diversi livelli di &lt;span class="important"&gt;specificità&lt;/span&gt;. Esempio:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Gli &lt;span class="code-snippet"&gt;ID&lt;/span&gt; hanno specificità 100&lt;/li&gt;
+        &lt;li&gt;Le &lt;span class="code-snippet"&gt;classi&lt;/span&gt; hanno specificità 10&lt;/li&gt;
+        &lt;li&gt;Gli &lt;span class="code-snippet"&gt;elementi&lt;/span&gt; hanno specificità 1&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;Secondo paragrafo con un altro link alla documentazione e a come vengono gestiti i &lt;a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts"&gt;conflitti (specificità)&lt;/a&gt; e &lt;a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators"&gt;combinati&lt;/a&gt; i selettori.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="content examples"&gt;
+      &lt;h2&gt;Esempi Pratici&lt;/h2&gt;
+      &lt;p&gt;Osserva come i diversi selettori interagiscono tra loro. Il selettore &lt;span class="code-snippet"&gt;.post
+
+          &amp;gt; h1&lt;/span&gt; ha una specificità maggiore di &lt;span class="code-snippet"&gt;article h1&lt;/span&gt;.&lt;/p&gt;
+      &lt;p&gt;Prova a modificare i &lt;a href="#"&gt;link in questa sezione&lt;/a&gt; per vedere gli effetti!&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="content challenge secret-container"&gt;
+      &lt;h2&gt;Sfida Finale&lt;/h2&gt;
+      &lt;p&gt;Ora che hai imparato le basi, è tempo di una &lt;span class="important"&gt;sfida&lt;/span&gt;!&lt;/p&gt;
+      &lt;div class="secret-message"&gt;YOU SHALL NOT PASS&lt;/div&gt;
+      &lt;p&gt;Cerca attentamente in questa sezione... c'è qualcosa di nascosto che puoi rivelare solo modificando la regola CSS giusta!&lt;/p&gt;
+      &lt;p&gt;Suggerimento: guarda l'ESERCIZIO-4 nelle istruzioni CSS e modifica il colore del testo della classe indicata.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/article&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Link utili: &lt;a href="#"&gt;privacy&lt;/a&gt; · &lt;a href="#"&gt;note legali&lt;/a&gt;&lt;/p&gt;
+  &lt;/footer&gt;
+
+  &lt;style&gt;
+/* === Area per i tuoi esperimenti durante gli esercizi === */
+
+/* ESERCIZIO-1: Aggiungi qui una regola più specifica, che vinca sulle tre regole di seguito,
+   che modifichi il colore del titolo principale dentro &lt;article class="post featured"&gt; */
+
+h1 {
+  color: var(--neutral);
+}
+
+article h1 {
+  color: teal;
+}
+
+.post &gt; h1 {
+  color: rebeccapurple;
+}
+
+
+/* ESERCIZIO-2: */
+
+/* Quale regola ha la precedenza? e perché */
+
+.content a {
+  color: crimson;
+}
+
+.content p a {
+  color: darkorange;
+}
+
+/* Risolvi il conflitto dei link nella prima sezione aggiungendo una
+   regola che renda i link del primo paragrafo blu scuro */
+
+/* === Ordine nella cascata === */
+footer a {
+  color: gray;
+}
+
+/* ESERCIZIO-3: Aggiungi più sotto un'altra regola equivalente che modifichi
+   il colore dei link nel footer in verde scuro. */
+
+/* ESERCIZIO-4: Trova il messaggio segreto nascosto nella sezione "Challenge".
+   Per svelarlo, devi modificare SOLO il colore del testo della classe corretta.*/
+
+/* ESERCIZIO bonus: segui questi esercizi:
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Styling_a_bio_page
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Selectors */
+  &lt;/style&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="exercise-navigation">
+                    <a href="/tema/css.html" class="btn-secondary">Torna alla Lista Esercizi</a>
+                    <a href="#" class="btn-primary">Prossimo Esercizio →</a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Esercizi Tecnologie Web</p>
+            <nav class="footer-nav">
+                <a href="/about.html">Info</a>
+                <a href="/risorse.html">Risorse</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
