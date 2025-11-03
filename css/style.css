@@ -769,8 +769,8 @@ header {
 
 .btn-secondary:hover {
     background-color: var(--color-bg-primary);
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
     transform: translateX(-3px);
 }
 
