@@ -75,3 +75,5 @@ padding: calc(var(--spacing-sm) * 1.5) var(--spacing-md);
 *Better:* Define ~--spacing-md-plus: 0.75rem~ in variables.
 
 [2025-11-03 lun 17:25]
+** NEXT 404 page
+** NEXT chat page
