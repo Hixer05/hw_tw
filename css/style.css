@@ -133,7 +133,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-primary-dark);
+    color: var(--color-secondary);
 }
 
 ul, ol {
@@ -696,7 +696,7 @@ header {
 }
 
 .btn-link:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
     color: var(--color-text-inverse);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -717,7 +717,7 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
     color: var(--color-text-inverse);
     transform: translateX(3px);
 }
@@ -884,7 +884,7 @@ header {
 }
 
 .solution-box summary:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
 }
 
 .solution-content {
@@ -993,7 +993,7 @@ header {
 }
 
 .resource-link:hover {
-    color: var(--color-primary-dark);
+    color: var(--color-secondary);
     transform: translateX(3px);
 }
 
@@ -1131,7 +1131,7 @@ header {
 }
 
 .chat-send-btn:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
     transform: translateY(-2px);
 }
 
