@@ -3,7 +3,6 @@
 * Todos
 ** DONE [#A] FIX article floating over nav
 [2025-11-03 lun 17:25]
-** DONE [#A] Remove Hixer05 footer
 ** TODO [#B] Redundant List Resets
 :PROPERTIES:
 :LOCATION: Lines 290, 296, 386, 395, 726
