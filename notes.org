@@ -3,7 +3,7 @@
 * Todos
 ** DONE [#A] FIX article floating over nav
 [2025-11-03 lun 17:25]
-** TODO [#B] Redundant List Resets
+** DONE [#B] Redundant List Resets
 :PROPERTIES:
 :LOCATION: Lines 290, 296, 386, 395, 726
 :END:
@@ -17,7 +17,7 @@
 
 *Fix:* Remove redundant ~list-style: none~ when parent already handles it.
 [2025-11-03 lun 17:25]
-** TODO [#B] Table Display Issue
+** NEXT [#B] Table Display Issue
 :PROPERTIES:
 :LOCATION: Line 592
 :PRIORITY: A

@@ -260,10 +260,6 @@ header {
     list-style: none;
 }
 
-.nav-menu li {
-    list-style: none;
-}
-
 .nav-menu a {
     display: block;
     padding: calc(var(--spacing-sm) * 1.5) var(--spacing-md);
@@ -340,9 +336,6 @@ header {
     gap: var(--spacing-sm);
 }
 
-.sidebar-menu li {
-    list-style: none;
-}
 
 .sidebar-menu a {
     display: block;
@@ -364,18 +357,17 @@ header {
    ============================================ */
 .breadcrumb {
     margin-bottom: var(--spacing-lg);
+    list-style: none;
 }
 
 .breadcrumb ol {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-sm);
-    list-style: none;
     font-size: var(--font-size-sm);
 }
 
 .breadcrumb li {
-    list-style: none;
     display: flex;
     align-items: center;
 }
@@ -835,10 +827,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
-}
-
-.materials-list li {
-    list-style: none;
 }
 
 .materials-list a {
