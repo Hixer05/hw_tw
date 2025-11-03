@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TITOLO ESERCIZIO] - Esercizio [TEMA]</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <h1>Esercizi Tecnologie Web</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/risorse.html">Risorse</a></li>
+                <li><a href="/chat.html">Chat</a></li>
+                <li><a href="/about.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-layout">
+        <aside class="sidebar">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/tema/[TEMA-SLUG].html">[TEMA]</a></li>
+                    <li aria-current="page">Esercizio [NUMERO]</li>
+                </ol>
+            </nav>
+            
+            <div class="sidebar-section">
+                <h3>Info Esercizio</h3>
+                <dl class="exercise-meta">
+                    <dt>Difficoltà:</dt>
+                    <dd><span class="badge badge-[basic|intermediate|advanced]">[DIFFICOLTÀ]</span></dd>
+                    <dt>Durata:</dt>
+                    <dd>[DURATA]</dd>
+                    <dt>Prerequisiti:</dt>
+                    <dd>[PREREQUISITI]</dd>
+                </dl>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Navigazione</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#instructions">Istruzioni</a></li>
+                    <li><a href="#materials">Materiali</a></li>
+                    <li><a href="#solution">Soluzione</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Altri Esercizi</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="[URL-ESERCIZIO-PRECEDENTE]">← Esercizio Precedente</a></li>
+                    <li><a href="[URL-ESERCIZIO-SUCCESSIVO]">Prossimo Esercizio →</a></li>
+                    <li><a href="/tema/[TEMA-SLUG].html">Torna alla Lista [TEMA]</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <article class="exercise-content">
+                <header class="exercise-header">
+                    <h2>Esercizio [NUMERO]: [TITOLO]</h2>
+                    <div class="exercise-badges">
+                        <span class="badge badge-[basic|intermediate|advanced]">[DIFFICOLTÀ]</span>
+                        <span class="badge badge-duration">[DURATA]</span>
+                    </div>
+                </header>
+
+                <section id="instructions" class="exercise-section">
+                    <h3>Istruzioni</h3>
+                    <div class="instructions-content">
+                        <h4>Obiettivo</h4>
+                        <p>[DESCRIVI L'OBIETTIVO PRINCIPALE DI APPRENDIMENTO]</p>
+
+                        <h4>Compiti</h4>
+                        <ol>
+                            <li>[COMPITO 1]</li>
+                            <li>[COMPITO 2]</li>
+                            <li>[COMPITO 3]</li>
+                            <!-- Aggiungi altri compiti se necessario -->
+                        </ol>
+
+                        <h4>Output Atteso</h4>
+                        <p>[DESCRIVI COME DOVREBBE APPARIRE/COMPORTARSI IL RISULTATO FINALE]</p>
+
+                        <h4>Suggerimenti</h4>
+                        <ul>
+                            <li>[SUGGERIMENTO 1]</li>
+                            <li>[SUGGERIMENTO 2]</li>
+                            <!-- Aggiungi altri suggerimenti se necessario -->
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="materials" class="exercise-section">
+                    <h3>Materiali</h3>
+                    <div class="materials-box">
+                        <h4>Risorse</h4>
+                        <ul class="materials-list">
+                            <li>
+                                <a href="[URL-MDN]" target="_blank" rel="noopener noreferrer">
+                                    MDN: [TITOLO RISORSA]
+                                </a>
+                            </li>
+                            <li>
+                                <a href="[URL-W3SCHOOLS]" target="_blank" rel="noopener noreferrer">
+                                    W3Schools: [TITOLO RISORSA]
+                                </a>
+                            </li>
+                            <!-- Aggiungi altre risorse se necessario -->
+                        </ul>
+
+                        <h4>Template</h4>
+                        <ul class="materials-list">
+                            <li><a href="/templates/[FILE-TEMPLATE]" download>[NOME TEMPLATE]</a></li>
+                            <!-- Aggiungi altri template se necessario -->
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="solution" class="exercise-section">
+                    <h3>Soluzione</h3>
+                    <div class="solution-box">
+                        <details>
+                            <summary>Clicca per rivelare la soluzione</summary>
+                            <div class="solution-content">
+                                <p><strong>Nota:</strong> Prova a completare l'esercizio da solo prima di visualizzare la soluzione.</p>
+                                
+                                <h4>Codice:</h4>
+                                <pre><code>[CODICE SOLUZIONE QUI]</code></pre>
+
+                                <h4>Spiegazione:</h4>
+                                <ul>
+                                    <li>[PUNTO SPIEGAZIONE 1]</li>
+                                    <li>[PUNTO SPIEGAZIONE 2]</li>
+                                    <!-- Aggiungi altri punti di spiegazione se necessario -->
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
+                <div class="exercise-navigation">
+                    <a href="/tema/[TEMA-SLUG].html" class="btn-secondary">Torna alla Lista Esercizi</a>
+                    <a href="[URL-ESERCIZIO-SUCCESSIVO]" class="btn-primary">Prossimo Esercizio →</a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Esercizi Tecnologie Web</p>
+            <p>Creato da <strong>Hixer05</strong></p>
+            <nav class="footer-nav">
+                <a href="/about.html">Info</a>
+                <a href="/risorse.html">Risorse</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
