@@ -309,13 +309,14 @@ header {
     padding: var(--spacing-sm-plus) var(--spacing-md);
     border-radius: var(--border-radius-md);
     font-weight: 500;
-    transition: all var(--transition-fast);
+    transition: all var(--transition-base);
     color: var(--color-text-secondary);
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     color: var(--color-text-inverse);
     transform: translateY(-2px);
 }
@@ -565,7 +566,7 @@ header {
 }
 
 .card-link:hover {
-    background-color: var(--color-secondary);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     color: var(--color-text-inverse);
     transform: translateX(5px);
 }
@@ -727,7 +728,7 @@ header {
 }
 
 .btn-link:hover {
-    background-color: var(--color-secondary);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     color: var(--color-text-inverse);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -748,7 +749,7 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-secondary);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     color: var(--color-text-inverse);
     transform: translateX(3px);
 }
@@ -1031,6 +1032,7 @@ header {
 .chat-container {
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     height: calc(100vh - calc(var(--header-height) * 2));
@@ -1394,6 +1396,79 @@ footer {
     margin-bottom: var(--spacing-lg);
 }
 
+
+/* ============================================
+   ABOUT PAGE CUSTOM CLASSES
+   ============================================ */
+
+/* Flex row with gap and wrap, for image+text rows in about page */
+.about-flex-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Square/circle logo (unibo) used in about with fixed size and circular crop */
+.about-logo {
+    width: 88px;
+    height: 88px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    /* matches the "clip-path: circle()" and width/height style previously */
+    border: 2px solid var(--color-border);
+    background: #fff;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* Palette color row - collection of colored circles */
+.palette-row {
+    display: flex;
+    gap: 0.7em;
+    padding-inline: 0;
+    list-style: none;
+    margin-bottom: var(--spacing-xs);
+}
+
+.palette-color {
+    display: inline-block;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 50%;
+    border: 2px solid var(--color-bg-primary);
+    /* background-color set inline or via utility class */
+}
+
+.palette-primary   { background: var(--color-primary);   border-color: var(--color-bg-primary); }
+.palette-secondary { background: var(--color-secondary); border-color: var(--color-bg-primary); }
+.palette-accent    { background: var(--color-accent);    border-color: var(--color-bg-primary); }
+.palette-bg        { background: var(--color-bg-primary); border-color: var(--color-bg-tertiary);}
+.palette-text      { background: var(--color-text-primary); border-color: var(--color-bg-tertiary);}
+
+/* Font/type info in about page */
+.about-typography-info {
+    margin-bottom: 0;
+}
+
+/* Responsive gap for .about-flex-row and .palette-row on mobile */
+@media (max-width: 500px) {
+    .about-flex-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.9rem;
+    }
+    .palette-row {
+        gap: 0.4em;
+    }
+}
+
+/* If you want to reuse sections with some vertical spacing */
+.about-section-space-y {
+    margin-bottom: var(--spacing-2xl);
+}
 
 /* ============================================
    PRINT STYLES
